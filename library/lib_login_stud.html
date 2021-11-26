@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mystyle.css">
+    <title>Login for Library</title>
+</head>
+<body>
+    <!-- Logging page for students-->
+    <!-- the horizontal navigation bar-->
+    <div class="topnav">
+        <a href="../homepage.html">Home Page</a>
+        <a href="./login_lib.html">Library</a>
+        <a href="./lib_login_admin.html">Admin Login</a>
+        <a class="active" href="./lib_login_stud.html">Student Login</a>
+        <a href="../hostel/login_hostel.php">Hostels</a>
+        <a href="../tutoring_vids/tutoring.html">Video Classes</a>
+    </div> 
+    <br>
+
+    <div class="container">
+        <!-- code here -->
+        <div class="card">
+            <form class="card-form" action="lib_login_stud.php" method="post">
+                <div class="card-info" style="padding: 3px 0px;">
+                    <strong>Login for Students</strong>
+                    <br>
+                 </div>
+                <div class="input">
+                    <input type="text" id="thisid" name="thisid" class="input-field" pattern="[0-9]{2}[A-Z]{4}[0-9]{2}" title="ID should be of format ex- 19MCME03" required/>
+                    <label class="input-label">ID</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="pwd" name="pwd" class="input-field" title="Password is ID+firstname" required/>
+                    <label class="input-label">Password</label>
+                </div>
+                <div class="action">
+                    <button class="action-button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>
+            &#169; Vaishnavi Raghavajosyula (19MCME03)
+        </p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,194 @@
+/*////////////////////////////////////////////////////// THIS IS THE CSS IN GENERAL \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+/* THIS IS THE CSS FOR THE BODY THROUGHOUT THE PROJECT*/
+body {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5;
+    background-color: #f1f3fb;
+   /* padding: 0 2rem;*/
+}
+/* THIS IS THE CSS FOR THE INPUT FIELDS THROUGHOUT THE PROJECT*/
+input {
+    appearance: none;
+    border-radius: 0;
+}
+/* THIS IS THE CARD THAT WILL CONTAIN THE STUFF TO DISPLAY AMYTHING*/
+.card {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(153, 153, 153, .25);
+    padding: 0.75rem;
+}
+/* THIS IS THE CSS FOR THE HEADINGS OF THE CARDS IN THE BODY THROUGHOUT THE PROJECT*/
+.card-heading {
+    position: absolute;
+    display: block;
+    left: 10%;
+    top: 15%;
+    right: 10%;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #735400;
+    line-height: 1.222;
+}
+/* THIS IS THE CSS FOR A SUB CATERGORY OF HEADINGS OF THE CARDS IN THE BODY THROUGHOUT THE PROJECT*/
+.card-heading small {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 400;
+    margin-top: 0.25em;
+}
+/* THIS IS THE CSS FOR THE FORMS THAT WILL BE IN CARDS IN THE BODY THROUGHOUT THE PROJECT*/
+.card-form {
+    padding: 2rem 1rem 0;
+}
+/* THIS IS THE CSS FOR THE CLASSES THAT WILL CONATIN SOME INPUT*/
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+/* THIS IS THE CSS FOR THE CLASSES THAT WILL CONATIN SOME INPUT*/
+.input {
+    margin-top: 1.5rem;
+}
+/* THIS IS THE CSS FOR THE CLASSES THAT WILL CONATIN SOME INPUT , AND FOR THEIR LABELS*/
+.input-label {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+}
+/* THIS IS THE CSS FOR THE HEADINGS OF THE CLASSES THAT WILL CONATIN SOME INPUT*/
+.heading-label {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+}
+/* THIS IS THE CSS FOR THE CLASSES THAT WILL CONATIN SOME INPUT FIELDS*/
+.input-field {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+}
+/* THIS IS TO STYLE HOW THE FIELDS SHOULD ACT FOCUS AND VALIDATIONS*/
+.input-field:focus, .input-field:valid {
+    outline: 0;
+    border-bottom-color: #8379cf;
+}
+/* THIS IS TO SHIFT THE PLACE OF THE INPUT FIELD WHEN CLICKED ON*/
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+    color: #8379cf;
+    transform: translateY(-1.5rem);
+}
+
+.action {
+    margin-top: 2rem;
+}
+/* THIS IS TO STYLE THE ACTIVE CLASS BUTTON IN THE NAVIGATION BAR*/
+.action-button {
+    font: inherit;
+    font-size: 1.25rem;
+    padding: 1em;
+    width: 100%;
+    font-weight: 500;
+    background-color: #8379cf;
+    border-radius: 6px;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+}
+.action-button a{
+    font: inherit;
+    font-size: 1.25rem;
+    padding: 1em;
+    width: 100%;
+    font-weight: 500;
+    background-color: #8379cf;
+    border-radius: 6px;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+}
+.action-button:focus {
+    outline: 0;
+}
+.card-info {
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #7d95a5;
+}
+.card-info2 {
+    padding: 1rem 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #7d95a5;
+}
+.card-info a {
+    display: block;
+    color: #8379cf;
+    text-decoration: none;
+}
+
+/* THIS IS TO DEFINE HOW THE FOOTER SHOULD LOOK  THROUGHOUT THE WHOLE PROJECT */
+footer {
+    text-align: center;
+    padding: 1.5px;
+    background-color: #8379cf;
+    width: 100%;
+    color: white;
+    bottom:0;
+    margin-top: auto;
+    position: absolute;
+}
+
+/* THIS IS TO STYLE ERROR MESSAGES THAT WILL BE USED THROUGHOUT THE PROJECT*/
+#errorMsg{
+    text-align: center;
+    width: 100%;
+    color: red;
+}
+
+
+/* /////////////////////////                   THIS IS FOR THE TOP NAVIGATION BAR \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  */
+
+/* THIS IS TO DEFINE THE CLASS THAT WILL CONTAIN THE LIST OF LINK IN THE NAVIGATION BAR*/
+.topnav {
+    overflow: hidden;
+    background-color: #8379cf;
+  }
+  
+/* THIS IS TO DEFINE THE LINKS IN THE CLASS THAT WILL CONTAIN THE NAVIGATION BAR*/
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  /* THIS IS TO DEFINE THE LINKS UPON HOVERING IN THE CLASS THAT WILL CONTAIN THE NAVIGATION BAR*/
+  .topnav a:hover {
+    background-color: rgba(114, 104, 190, 0.932);
+    color: white;
+  }
+  
+/* THIS IS TO DEFINE AN ACTIVE LINK, I.E. THE PAGE IS CURRENTLY ACTIVE IN THE TOP HORIZONTAL NAVIGATION BAR */
+  .topnav a.active {
+    background-color: #413c64;
+    color: white;
+  }

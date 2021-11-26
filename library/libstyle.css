@@ -1,0 +1,34 @@
+/* THIS IS TO DEFINE A WIDER CARD THAN THE ONE USED BEFORE WHICH WILL BE USED WITHIN THE LIBRAY WEBSITES*/
+.card2 {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(153, 153, 153, .25);
+    padding: 0.75rem;
+}
+/* THIS IS TO DEFINE THE WAY THE TABLE WILL BE PRINT FOR WITHIN THE FUNCTIONS OF THE USERS*/
+table{
+    border:1px solid rgba(89, 59, 124, 0.767);
+    width:100%
+}
+/* THIS IS TO DEFINE THE TABLE HEADERS AND THE TABLE DEFINITIONS WITHIN THE TABLES*/
+th, td{
+    border:1px solid rgba(89, 59, 124, 0.767);
+    width:50%
+}
+/* THIS IS ALSO TO DEFINE A WIDER CARD THAN THE ONE USED BEFORE WHICH WILL BE USED WITHIN THE LIBRAY WEBSITES*/
+.card3{
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(153, 153, 153, .25);
+    padding: 0.75rem;
+}

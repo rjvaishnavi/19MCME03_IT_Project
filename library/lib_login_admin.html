@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../mystyle.css">
+    <script src="./libscript.js" type="text/javascript"></script>
+    <title>Login for Library</title>
+</head>
+<body>
+
+    <!-- Logging in page for admin's only -->
+    <!-- the horizontal navigation bar-->
+    <div class="topnav">
+        <a href="../homepage.html">Home Page</a>
+        <a href="./login_lib.html">Library</a>
+        <a class="active" href="./lib_login_admin.html">Admin Login</a>
+        <a href="./lib_login_stud.html">Student Login</a>
+        <a href="../hostel/login_hostel.php">Hostels</a>
+        <a href="../tutoring_vids/tutoring.html">Video Classes</a>
+    </div> 
+    <br>
+
+    <div class="container" >
+        <!-- code here -->
+        <div class="card">
+          
+            <form class="card-form" action="adminlogin.php" method="post" onsubmit="return validadmin();">
+                <div class="card-info" style="padding: 3px 0px;">
+                    <strong>Login for Admin</strong>
+                    <br>
+                 </div>
+                <div class="input">
+                    <input type="text" class="input-field" id="adminid" value="admin" required/>
+                    <label class="input-label">ID</label>
+                </div>
+                <div class="input">
+                    <input type="password"  value="1234" id="adminpwd" title="Enter valid password!" pattern="1234" class="input-field" required/>
+                    <label class="input-label">Password</label>
+                </div>
+                <div class="action">
+                    <button type="submit" class="action-button" >Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="errorMsg">
+        Default login for admin => ID:admin; password: 1234
+    </div>
+    <footer>
+        <p>
+            &#169; Vaishnavi Raghavajosyula (19MCME03)
+        </p>
+    </footer>
+    
+</body>
+</html>
