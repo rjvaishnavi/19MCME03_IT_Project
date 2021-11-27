@@ -1,7 +1,8 @@
 ## Internet Technologies Project - 2021
 # Vaishnavi Raghavajosyula - 19MCME03
 
-### The main page that will take you through the whole project is **_homepage.html_**
+## The main page that will take you through the whole project is **_homepage.html_**
+The output_screenprints.pdf contains the screenprints and execution of this entire project.
 
 #### The folders contain the codes for:
     - "library" for Library Management
